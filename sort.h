@@ -38,5 +38,8 @@ int partition(int *array, int low, int high, size_t size);
 void quicksort(int *array, int low, int high, size_t size);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
+void dll_adj_swap(listint_t **list, listint_t *left, listint_t *right);
+void cocktail_sort_list(listint_t **list);
+void counting_sort(int *array, size_t size);
 
 #endif
