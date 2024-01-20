@@ -41,5 +41,14 @@ void shell_sort(int *array, size_t size);
 void dll_adj_swap(listint_t **list, listint_t *left, listint_t *right);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void PrintArray(int *array, int iBeg, int iEnd);
+void CopyArray(int *source, int iBeg, int iEnd, int *dest);
+void TopDownMerge(int *source, int iBeg, int iMid, int iEnd, int *dest);
+void TopDownSplitMerge(int *source, int iBeg, int iEnd, int *dest);
+void merge_sort(int *array, size_t size);
+int ParentIndex(int i);
+int LeftChildIndex(int i);
+void heapify(int *array, size_t size, int start, int end);
+void heap_sort(int *array, size_t size);
 
 #endif
