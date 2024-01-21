@@ -55,9 +55,13 @@ int **build_buckets(int *bucket_count);
 int find_max(int *array, size_t size);
 void into_array(int *array, size_t size, int **buckets, int *bucket_count);
 void radix_sort(int *array, size_t size);
-void bitonic_compare(bool up, int *x, size_t size);
+/*void bitonic_compare(bool up, int *x, size_t size);
 void bitonic_merge(bool up, int *x, size_t size, size_t orig_size);
-void bitonic_sort_r(bool up, int *x, size_t size, size_t orig_size);
+void bitonic_sort_r(bool up, int *x, size_t size, size_t orig_size);*/
 void bitonic_sort(int *array, size_t size);
+int hoare_partition(int *array, size_t low, size_t high, size_t size);
+void hoare_quicksort_recursive(int *array, size_t low, size_t high, size_t size);
+void quick_sort_hoare(int *array, size_t size);
+int _strcmp(const char *str1, const char *str2);
 
 #endif

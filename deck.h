@@ -37,8 +37,11 @@ typedef struct deck_node_s
     struct deck_node_s *next;
 } deck_node_t;
 
-
+int get_card_position(const deck_node_t *node);
+deck_node_t *swap_card(deck_node_t *card, deck_node_t **deck);
+void insertion_sort_deck(deck_node_t **deck);
 void sort_deck(deck_node_t **deck);
+
 
 
 #endif /* DECK_H */
